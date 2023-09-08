@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Kettig</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.js" integrity="sha512-BgV3bZfMmUklIZI+dP0SILdmQ0RBY2gxegFFyfgo4Ui56WhKF4Pny9LsV/l96jxDDA+2w47zAXA4IyHo2UT/Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <canvas id="demo-canvas"></canvas>
+    <div class="title">
+        <h1 class = "greet">Aloha</h1>
+        <h1 class = "name">Thomas Kettig, PhD</h1>
+    </div>
+    <div class="content">
+        <div class="page1">
+            <h1>Thomas Kettig <span>PhD</span></h1>
+            <img src="https://static.wixstatic.com/media/931844_d827e8518b5d46b384c545131d772a60~mv2.jpg/v1/fill/w_270,h_232,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/931844_d827e8518b5d46b384c545131d772a60~mv2.jpg" alt="">
+            <i class="fa fa-arrow-down"></i>
+        </div>
+        <div class="page2 pager">
+            <h1>About Me</h1>
+            <p>Hello! Welcome to my humble internet abode. I'm Thomas.</p>
+            <br>
+            <p>I study how the sounds of language vary and change through space and time. Some of my research aims to understand why the vowel sounds of English change from one generation of speakers to the next. I have also undertaken the first large-scale, multi-speaker investigation of the vowels of Hawaiian. This means that my work touches on issues in endangered language description, sociolinguistics, quantitative experimental methods, theoretical phonology, historical linguistics, and articulatory and acoustic phonetics.</p>
+            <br>
+            <p>I'm currently an Assistant Professor in the  <a href="https://www.yorku.ca/laps/dlll/" target="_blank" rel="noreferrer noopener">Department of Languages, Literatures, and Linguistics</a> at York University in Toronto. I was previously an Associate Lecturer in the <a href="https://www.york.ac.uk/language/" target="_blank" rel="noreferrer noopener">Department of Language and Linguistic Science</a> at the University of York and a postdoctoral researcher on the AHRC-funded project <a href="https://sites.google.com/york.ac.uk/humans-machines/home?authuser=0" target="_blank" rel="noreferrer noopener" class="wixui-rich-text__text">"Humans and Machines: Novel Methods for Assessing Speaker Recognition Performance"</a>.</p>
+            <br>
+            <p>I'm from Jackson Heights, a neighborhood in New York City's borough of Queens and <a href="https://www.csmonitor.com/USA/Society/2019/0705/Saving-vanishing-words-Why-Queens-is-the-Noah-s-Ark-of-languages" target="_blank" rel="noreferrer noopener" class="wixui-rich-text__text">the most linguistically diverse community in the world</a>. I speak English, Hawaiian, French, Finnish, and German, understand Hawai'i Creole English (Pidgin), and have a reading knowledge of Yiddish and Latin.</p>
+        </div>
+        <div class="page3 pager">
+            <h1>Education</h1>
+            <div class="row">
+                <div class="circle gelatine"></div>
+                <div class="desc">
+                    <p><b>Year</b>: 2016–2021</p>
+                    <p>University of Hawaiʻi at Mānoa</p>
+                    <p>PhD student, Department of Linguistics</p>
+                    <p><b>Dissertation</b>: Haʻina ʻia mai ana ka puana: The vowels of ʻōlelo Hawaiʻi</p>
+                    <p><b>Advisor</b>: Rory Turnbull</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="circle gelatine"></div>
+                <div class="desc">
+
+                    <p><b>Year:</b> 2014–2015</p>
+                    <p>University of Cambridge</p>
+                    <p>St Edmund's College</p>
+                    <p>MPhil (Distinction), Theoretical and Applied Linguistics</p>
+                    <p><b>Thesis:</b> The BAD-LAD Split: A Phonetic Investigation</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="circle gelatine"></div>
+                <div class="desc">
+
+                    <p>2009–2013</p>
+                    <p>McGill University</p>
+                    <p>Montreal, Québec, Canada</p>
+                    <p>BA (Honours), Department of Linguistics</p>
+                    <p><b>Thesis:</b> The Canadian Shift in a Montreal Community: Change and Variation in Perception and Production of the Non-High Short Vowels</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="page4 pager">
+            <h1>Papers and Presentations</h1>
+            <p>[link] Coretta, Stefano, Joseph Casillas, … Thomas Kettig, … Timo Roettger. 2023. Multidimensional signals and analytic flexibility: Estimating degrees of freedom in human speech analyses. Advances in Methods and Practices in Psychological Science.</p>
+
+            <p>[link] [slides] Hughes, Vincent, Carmen Llamas, and Thomas Kettig. 2022. Legal context biases listeners toward hearing voice pairs as more similar. NWAV 50, San Jose, CA, USA, 14 October.</p>
+
+            <p>[link] Hughes, Vincent, Carmen Llamas, and Thomas Kettig. 2022. Eliciting and evaluating likelihood ratios for speaker recognition by human listeners under forensically realistic channel-mismatched conditions. Proceedings of Interspeech. Incheon, Korea.</p>
+
+            <p>[link] Hughes, Vincent, Carmen Llamas, and Thomas Kettig. 2002. A game-based approach to eliciting and evaluating likelihood ratios for speaker recognition. 30th Annual Conference of the International Association for Forensic Phonetics and Acoustics. Prague, Czechia, 10-13 July.</p>
+
+            <p>[link] Barreda, Santiago, Thomas Kettig, and Chaya Nove. 2021. Workshop: Improving vowel formant analysis in sociophonetic research using Fast Track. NWAV 49. Online, 19 October.</p>
+
+            <p>[link] Kettig, Thomas. 2021. Nānā i ke kumu: Acoustic phonetic research on archival recordings of ʻōlelo Hawaiʻi. International Conference on Language Documentation and Conservation 7. Online.</p>
+
+            <p>[link] Drager, Katie and Thomas Kettig. 2021. Trends in Sociophonetics. In R.-A. Knight and J. Setter (eds), Cambridge Handbook of Phonetics. Cambridge: Cambridge University Press, pp. 551-577.</p>
+
+            <p>[link] [poster] Kettig, Thomas. 2019. Spectral coarticulation in Hawaiian /aV/ and /aCV/ sequences. International Congress of Phonetic Sciences 2019. Melbourne, Australia, 8 August. (Poster)</p>
+
+            <p>[link] Kettig, Thomas and Katie Drager. 2018. The social evaluation of TRAP-backing in Montreal. Sociolinguistics Symposium 22. Auckland, New Zealand, 30 June.</p>
+
+            <p>[link] Kettig, Thomas. 2017. “Now say ‘Ah’: Internal factors of shifting and the English low vowel space.” E. Louviot & C. Delesse (eds), Studies in Language Variation and Change 2 Shifting, Switching and Alternating Patterns in the History of English. Newcastle upon Tyne: Cambridge Scholars Publishing.</p>
+
+            <p>[link] Kettig, Thomas. 2017. “Diachronically stable, lexically specific variation: The phonological representation of secondary /æ/-lengthening”. Phonetics and Phonology in Europe. Cologne, Germany, 12-14 June. (Poster)</p>
+
+            <p>[link] Kettig, Thomas and Bodo Winter. 2017. “Producing and Perceiving the Canadian Vowel Shift: Evidence from a Montreal Community.” Language Variation and Change 29(1): 79–100. DOI: https://doi.org/10.1017/S0954394517000023.</p>
+
+            <p>[link] Kettig, Thomas. 2017. “One hundred years of stability: The case of the BAD-LAD split”. 91st Annual Meeting of the Linguistic Society of America. Austin, TX, 6 January. (Poster)</p>
+
+            <p>[link] Kettig, Thomas, Sarah Turner, Đinh Thị Diệu and Phạm Văn Cự. 2016. “State Livelihood Planning and Legibility in Vietnam’s Northern Borderlands: The ‘Rightful Criticisms’ of Local Officials.” Journal of Contemporary Asia 46(1): 42–70. DOI: http://dx.doi.org/10.1080/00472336.2015.1028964.</p>
+
+            <p>[link] Kettig, Thomas. 2016. “Preaspiration following /æ/ in Southern Standard British English.” Sociolinguistics Symposium 21. Murcia, Spain, 15–18 June.</p>
+
+            <p>[link] [extended abstract] Kettig, Thomas. 2016. “The BAD-LAD split: Secondary /æ/-lengthening in Southern Standard British English” (Poster). 90th Annual Meeting of the Linguistic Society of America. Washington, DC, 8 January. DOI: http://dx.doi.org/10.3765/plsa.v1i0.3719.</p>  
+        </div>
+        <div class="page5 pager">
+            <h1>CV/Twitter</h1>
+            <div class="crow">
+                <button>Twitter</button>
+                <button>CV</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

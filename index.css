@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Newsreader:opsz,wght@6..72,800&family=Poppins:wght@300;500;700;900&family=Quicksand&family=Sofia&family=Ubuntu&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(130deg, #0f2027, #203a43, #2c5364);
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+.title{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px 15px silver;
+    display: grid;
+    place-items: center;
+}
+
+.greet{
+    font-size: 8rem;
+}
+
+.name{
+    display:none;
+    font-size: 5rem;
+}
+
+.content{
+    height: 100vh; /* Allow the content to expand naturally */
+    overflow: auto;
+    display:none;
+}
+
+.page1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+}
+
+.page1 img{
+    border-radius: 40%;
+    box-shadow: 0px 0px 55px silver;
+}
+.page1 h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: clamp( 2rem, 0.9090909090909092rem + 5.454545454545454vw, 5rem );
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px white;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    box-shadow: 0px 0px 10px whitesmoke;
+    padding:15px;
+}
+
+.page1 span{
+    color:whitesmoke;
+}
+
+/* Arrow Down */
+.page1 i{
+    font-size: 3rem;
+    color: whitesmoke;
+    animation: arrow 1.5s infinite;
+    background: inherit;
+}
+
+@keyframes arrow{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.page2{
+    width: 100%;
+    padding:20px;
+}
+
+.page4{
+    width: 100%;
+    padding:20px;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page2 h1, .page3 h1, .page4 h1, .page5 h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: clamp( 2rem, 1.4545454545454546rem + 2.727272727272727vw, 3.5rem );
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px white;
+    white-space: nowrap;
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    text-align: center;
+    box-shadow: 0px 0px 10px whitesmoke;
+    padding:15px;
+    margin-bottom: 40px;
+}
+
+.page2 p, .page4 p{
+    font-size: clamp( 1rem, 0.6363636363636364rem + 1.8181818181818181vw, 2rem );
+    color: whitesmoke;
+    text-shadow: 0px 0px 2px white;
+    line-height: 150%;
+}
+
+.page4 p{
+    margin-bottom: 20px;
+    font-size: clamp( 1rem, 0.6363636363636364rem + 1.8181818181818181vw, 1.5rem );
+}
+
+.page2 a{
+    font-size: clamp( 1rem, 0.6363636363636364rem + 1.8181818181818181vw, 2rem );
+    color: black;
+    font-weight: 800;
+    line-height: 150%;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.page2 a:hover{
+    color: whitesmoke;
+}
+
+.row{
+    display:flex;
+    padding-left:50px;
+    margin-bottom: 100px;
+}
+
+.circle{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: whiteSmoke;
+    box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;
+}
+
+.desc p{
+    font-size: clamp( 1rem, 0.6363636363636364rem + 1.8181818181818181vw, 1.5rem );
+    color: whitesmoke;
+    text-shadow: 0px 0px 2px white;
+    line-height: 150%;
+    text-align: left;
+    margin-left:50px;
+}
+
+.gelatine {
+    animation: gelatine 0.5s infinite;
+  }
+  
+  @keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
+
+  .page5 button{
+    font-size: clamp( 1rem, 0.6363636363636364rem + 1.8181818181818181vw, 2rem );
+    color: black;
+    font-weight: 800;
+    line-height: 150%;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background: white;
+    cursor: pointer;
+    width: 30%;
+    flex-wrap: wrap;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,0) 100%);
+  }
+
+  .crow{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
